@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -e "Enter the filename: \c"
+read -r file
+touch /home/ec2-user/$file
+echo "#!/bin/bash">>/home/ec2-user/$file
+echo "#version:" >>/home/ec2-user/$file
+echo "#purpose:" >>/home/ec2-user/$file
+echo "#Created date:" `date`>>/home/ec2-user/$file
+echo "#Modified date:" >>/home/ec2-user/$file
+echo "#Author name:" >>/home/ec2-user/$file
+echo "#Start" >>/home/ec2-user/$file
+echo "#End" >>/home/ec2-user/$file
